@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Dev</title>
+    <style>
+      /* p {
+        color: red;
+      } */
+      .styled {
+        color: green;
+      }
+      #new {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- comments are lines of codes that are not executed by the browser -->
+    <!-- ctrl + / => short cut for comment -->
+    <!-- heading tags -->
+    <!-- <h1 style="color: red">Heading one</h1> -->
+    <h1>Heading one</h1>
+    <h2 class="styled">Heading two</h2>
+    <h3>Heading three</h3>
+    <h4>Heading four</h4>
+    <h5>Heading five</h5>
+    <h6>Heading six</h6>
+
+    <!-- pragraph tag -->
+    <p>Hello I am a new paragraph</p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae similique
+      dignissimos, pariatur aperiam fugit corporis, quae porro nulla quisquam
+      est sit expedita rem placeat ex, quidem quos ipsam aspernatur quis!
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio
+      facilis distinctio? Error alias in nisi est iste. Similique, maiores.
+    </p>
+
+    <!-- div -->
+    <div>
+      <strong>Lorem ipsum dolor, sit amet consectetur</strong> adipisicing elit.
+      <em>Fugit saepe veritatis voluptatum</em> atque quia labore? Obcaecati
+      <u>consectetur commodi, nulla placeat</u> iste beatae, eligendi inventore
+      maxime vero repellendus voluptatem voluptate aut.
+    </div>
+
+    <div id="new">
+      <p>my paragraph text</p>
+      <img src="" alt="" />
+      <a href=""></a>
+    </div>
+
+    <!-- block level elements=> they form a new paragraph, they take up the width of the browser -->
+
+    <!-- inline elements=>they do not form a new pragraph, they take up the width of the content -->
+    <p>
+      <strong>The quick</strong> brown <em>fox</em> <u>jumped</u>
+      <strike>over</strike> <del>the</del> <span style="color: red">l</span>azy
+      dog. Lorem ipsum dolor sit amet, <mark>consectetur</mark> adipisicing
+      elit. <br />
+      <span style="background-color: blue; color: white">Ipsa nulla quia</span>
+      fugit ad rerum architecto exercitationem voluptate quis asperiores maxime
+      doloribus, vero illum, amet dolorum minima? <br />
+      Laborum a et quo.
+    </p>
+
+    <!-- button -->
+    <button onclick="alert('hello html students')">click me</button>
+    <button>subscribe</button>
+
+    <!-- anchor -->
+    <a href="about.html">go to about us</a>
+
+    <!-- br=> line break -->
+    <!-- hr=> horizontal rule -->
+    <br />
+    <hr />
+
+    <a href="https://google.com" target="_blank">google</a>
+    <a href="https://facebook.com" target="_blank">facebook</a>
+    <a href="https://instagram.com" target="_blank">instagram</a>
+    <a href="https://twitter.com" target="_blank">twitter</a>
+    <br />
+    <a href="https://x.com/ejovwogfreeman">visit gb on twitter</a>
+
+    <!-- lists (ordered and unordered list) -->
+    <ol>
+      <h3>My fav movies are:</h3>
+      <li>Merlin</li>
+      <li>Legend of the seeker</li>
+      <li>Game of thrones</li>
+      <h3>Animation</h3>
+      <li>Avatar</li>
+      <li>Moana</li>
+    </ol>
+    <ul>
+      <h3>My fav food are:</h3>
+      <li>Rice</li>
+      <li>Soup</li>
+      <li>Pasta</li>
+    </ul>
+
+    <!-- image -->
+    <!-- getting imge url  -->
+    <!-- <img
+      src="https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?auto=compress&cs=tinysrgb&w=600"
+      alt=""
+    /> -->
+
+    <!-- getting image locally -->
+    <img src="boy-img.webp" alt="boy image" width="300px" /> <br />
+
+    <!-- <video src="video.mp4" width="100%" autoplay controls loop></video> -->
+    <video src="video.mp4" width="300px" controls></video> <br />
+    <audio src="music.mp3" controls></audio>
+
+    <!-- embed (can add any type of file) -->
+    <!-- <embed src="boy-img.webp" type="" /> -->
+    <embed src="FGSE.pdf" type="" /><br />
+    <a href="FGSE.pdf">pdf</a>
+    <hr />
+
+    <!-- <table>
+      <thead></thead>
+      <tbody></tbody>
+    </table> -->
+
+    <!-- table - (tr, th and td) -->
+    <table border="">
+      <tr>
+        <th>S/N</th>
+        <th>Full Name</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td>john@gmail.com</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Mark Powells</td>
+        <td>mark@company.com</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Sarah Smith</td>
+        <td>sarah@smith.com</td>
+      </tr>
+    </table>
+    <br />
+    <hr />
+    <br />
+    <!-- form tags (label and input)-->
+    <!-- <form action="">
+      <label for="">Full Name</label> <br />
+      <input type="text" /> <br /><br />
+      <label for="">Email</label> <br />
+      <input type="email" /> <br /><br />
+      <label for="">Age</label> <br />
+      <input type="number" /> <br /><br />
+      <label for="">Color</label> <br />
+      <input type="color" /> <br /><br />
+      <label for="">Level</label> <br />
+      <input type="range" /> <br /><br />
+      <label for="">Date</label> <br />
+      <input type="date" /> <br /><br />
+      <label for="">Time</label> <br />
+      <input type="time" /> <br /><br />
+      <label for="">File</label> <br />
+      <input type="file" /> <br /><br />
+      <label for="">Images</label> <br />
+      <input type="file" multiple /> <br /><br />
+      <label for="">Religion</label> <br />
+      <input type="radio" name="religion" /><span>Chistian</span>
+      <input type="radio" name="religion" /><span>Muslim</span>
+      <input type="radio" name="religion" /><span>Others</span><br /><br />
+      <label for="">Skillset</label> <br />
+      <input type="checkbox" name="skill" /><span>html</span>
+      <input type="checkbox" name="skill" /><span>css</span>
+      <input type="checkbox" name="skill" /><span>bootstrap</span>
+      <input type="checkbox" name="skill" /><span>git & github</span>
+      <input type="checkbox" name="skill" /><span>js</span>
+      <input type="checkbox" name="skill" /><span>react</span>
+      <input type="checkbox" name="skill" /><span>node</span>
+      <input type="checkbox" name="skill" /><span>express</span><br /><br />
+      <label for="">Department</label><br />
+      <select>
+        <option>--select department--</option>
+        <optgroup label="Coding dept">
+          <option>web development(full stack)</option>
+          <option>web development(frontend)</option>
+          <option>web development(backend)</option>
+          <option>data analytics</option>
+          <option>data science</option>
+          <option>python programming</option>
+          <option>software engineering</option>
+        </optgroup>
+        <optgroup label="non coding dept">
+          <option>graphic design</option>
+          <option>video editing</option>
+          <option>ui/ux</option>
+        </optgroup></select
+      ><br /><br />
+      <button>submit</button>
+      <input type="Submit" />
+    </form> -->
+
+    <form action="">
+      <fieldset>
+        <legend><h2>Registration Form</h2></legend>
+        <label for="name">Full Name</label> <br />
+        <input id="name" type="text" required placeholder="eg John Doe" />
+        <br /><br />
+        <label for="email">Email</label> <br />
+        <input
+          id="email"
+          type="email"
+          required
+          placeholder="eg john@example.com"
+        />
+        <br /><br />
+        <label for="">Email</label> <br />
+        <input type="email" required value="gb@gmail.com" readonly />
+        <br /><br />
+        <label for="">Message</label><br />
+        <textarea name="" id=""></textarea><br /><br />
+        <select>
+          <option>--select department--</option>
+          <optgroup label="Coding dept">
+            <option>web development(full stack)</option>
+            <option>web development(frontend)</option>
+            <option>web development(backend)</option>
+            <option>data analytics</option>
+            <option>data science</option>
+            <option>python programming</option>
+            <option>software engineering</option>
+          </optgroup>
+          <optgroup label="non coding dept">
+            <option>graphic design</option>
+            <option>video editing</option>
+            <option>ui/ux</option>
+          </optgroup></select
+        ><br /><br />
+        <button>SUBMIT FORM</button>
+      </fieldset>
+    </form>
+
+    <br /><br />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/0bBvz7b61kw?si=THui9_FGwxnTuml5"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Rosemont+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+
+    <!-- Note: Self closing tags (embed, hr, br, img, input etc) -->
+    <!-- semantic tags => they tell special meaning to the browser and developer-->
+    <!-- <article>
+      <aside>
+      <details>
+      <figcaption>
+      <figure>
+      <footer>
+      <header>
+      <main>
+      <mark>
+      <nav>
+      <section>
+      <summary>
+      <time> -->
+
+    <section class="styled">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+        animi dolores asperiores earum non iure reiciendis vero? Molestiae velit
+        quaerat repellendus possimus quidem ut doloribus! Officiis nostrum odio
+        non sunt.
+      </p>
+    </section>
+
+    <!-- html attributes => attributes gives special meaning or informtion to our tags/elements -->
+
+    <!-- mandatory attributes (src, href, ) -->
+    <hr />
+    <!-- <img src="" alt="alt image" /> -->
+    <!-- <a href="https://youtube.com">hello</a> -->
+
+    <!-- e.g of other attributes (type, for, name, width, height, class, id) -->
+
+    <!-- <form action="">
+      <label for="">username</label>
+      <input type="text" name="username" /><br />
+      <br />
+      <label for="">password</label>
+      <input type="password" name="password" /><br /><br />
+      <button>submit</button>
+    </form> -->
+
+    <!-- relative
+    <img src="boy-img.webp" alt="" />
+    <a href="about.html"></a>
+
+    absolute
+    <img src="https://freimage" alt="" />
+    <a href="https://facebook.com"></a> -->
+
+    <!-- <p>
+      the <span title="World Wide Web">WWW</span> is an organisation that .....
+    </p>
+    <p>
+      <abbr title="Hyper Text Markup Language">HTML</abbr> is used for creating
+      contents
+    </p> -->
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ab quidem
+      recusandae voluptatibus omnis nostrum cupiditate sapiente autem hic
+      dolorem, at, nesciunt ad, nisi soluta accusamus dolor ratione
+      reprehenderit culpa?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ab quidem
+      recusandae voluptatibus omnis nostrum cupiditate sapiente autem hic
+      dolorem, at, nesciunt ad, nisi soluta accusamus dolor ratione
+      reprehenderit culpa?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ab quidem
+      recusandae voluptatibus omnis nostrum cupiditate sapiente autem hic
+      dolorem, at, nesciunt ad, nisi soluta accusamus dolor ratione
+      reprehenderit culpa?
+    </p>
+    <p class="styled">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ab quidem
+      recusandae voluptatibus omnis nostrum cupiditate sapiente autem hic
+      dolorem, at, nesciunt ad, nisi soluta accusamus dolor ratione
+      reprehenderit culpa?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ab quidem
+      recusandae voluptatibus omnis nostrum cupiditate sapiente autem hic
+      dolorem, at, nesciunt ad, nisi soluta accusamus dolor ratione
+      reprehenderit culpa?
+    </p>
+
+    <!-- id are unique and classes are not -->
+
+    <!-- <div style="padding: 100px"></div> -->
+
+    <h1>
+      F<span style="color: red">OO</span>DIE<span style="color: red">.</span>
+    </h1>
+  </body>
+</html>
