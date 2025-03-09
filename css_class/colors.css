@@ -1,0 +1,130 @@
+/* h1 {
+  color: red;
+} */
+
+/* different color in css */
+/* 
+ 
+1) color names (red, green, blue, purple, tomato, coral, )
+2) hexadecimal color values
+3) rgb/rgba color values
+4) hsl/hsla color values
+
+
+*/
+
+/* HEX -> 0 - F; */
+
+/* body {
+  color: #rrggbb;
+} */
+
+body {
+  /* six char */
+  /* color: #ff0000; */
+  /* color: #00ff00; */
+  /* color: #0000ff; */
+  /* color: #000000; */
+  /* color: #ffffff; */
+  /* 3 char */
+  /* color: #f00; */
+  /* color: #0f0; */
+  /* color: #00f; */
+  /* color: #000; */
+  /* color: #fff; */
+}
+
+/* hexacecimal colors */
+h1 {
+  /* color: #rrggbb; */
+  /* min -> 0
+  max -> f */
+  /* color: #000000;
+  color: #ffffff;
+  color: #ff0000;
+  color: #00ff00;
+  color: #0000ff; */
+  /* color: #fff;
+  color: #000;
+  color: #f00;
+  color: #0f0;
+  color: #00f; */
+  /* color: #f67498; */
+  /* background-color: whitesmoke; */
+}
+
+/* rgb colors */
+h1 {
+  /* min -> 0;
+  max-> 255; */
+  /* color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+  color: rgb(0, 255, 0);
+  color: rgb(0, 0, 255);
+  color: rgb(215, 63, 187); */
+}
+
+/* rgba -> extension of rgb where a is alpah value (represents opacity) */
+body {
+  /* background-color: black; */
+}
+h1 {
+  /* color: rgb(0, 0, 0, 0.5); */
+  /* color: white;
+  background-color: rgba(255, 255, 255, 0.2); */
+}
+
+h1:hover {
+  /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+/* div {
+  background-color: red;
+  width: 50%;
+} */
+
+/* fixed or absolute units */
+/* 1) px 2) cm 3) mm 4) in 5) pt 6) pc */
+/* relative units */
+/* 1) % 2) em 3) rem 4) vw 5) vh */
+
+i {
+  /* font-size: 1000px; */
+  /* font-size: 100%; */
+}
+
+img {
+  /* width: 200px; */
+  /* width: 50%; */
+  /* width: 50%;
+  height: 1000px; */
+}
+
+p {
+  /* font-size: 3px; */
+  /* font-size: 1mm; */
+}
+
+/* 1em = 16px */
+/* p {
+  font-size: 1.5em;
+} */
+
+/* p {
+  font-size: 2rem;
+} */
+
+/*  */
+img {
+  /* width: 100vw; */
+  /* height: 100%; */
+  /* width: 500px;
+  height: 600px; */
+  /* display: block;
+  margin: auto; */
+}
+
+/* body {
+  text-align: center;
+} */

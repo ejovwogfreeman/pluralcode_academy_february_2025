@@ -1,0 +1,166 @@
+/* 
+css syntax
+
+selector {
+    property: value
+}
+
+*/
+
+/* universal selector */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* h1 {
+  border: 1px solid red;
+  border-width: 3px;
+  border-style: dashed;
+  border-color: green;
+} */
+
+/* Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value) */
+
+/* simple selector */
+/* a) element selector */
+/* h1 {
+  color: red;
+} */
+
+/* b) class selector */
+/* .diff {
+  color: blue;
+} */
+
+/* c) id selector */
+/* #unique {
+  color: purple;
+} */
+
+/* combinators */
+/* Descendant combinator (space)
+Child combinator (>)
+Next sibling combinator (+)
+Subsequent-sibling combinator (~) */
+
+/* descendant */
+/* div p {
+  background-color: green;
+  color: white;
+} */
+
+/* child combinator */
+/* div > p {
+  background-color: green;
+  color: white;
+} */
+
+/* next sibbling combinator */
+/* div + p {
+  color: red;
+} */
+
+/* Subsequent-sibling combinator */
+/* div ~ p {
+  color: red;
+} */
+
+/* section {
+  background-color: red;
+}
+
+section:hover {
+  background-color: blue;
+} */
+
+/* unvisited state of a link=> blue and underline */
+/* visited state of a link=> pruple and underline */
+/* active state of a link=> pruple and underline */
+
+/* a {
+  color: aqua;
+  text-decoration: none;
+  text-transform: capitalize;
+} */
+
+/* pseudo classes */
+/* a:visited {
+  color: greenyellow;
+} */
+
+/* a:active {
+  color: cadetblue;
+} */
+
+/* a:hover {
+  color: tomato;
+} */
+
+/* .p:hover {
+  background-color: green;
+} */
+
+/* #p:hover {
+  background-color: teal;
+} */
+
+/* 
+li:nth-child(odd) {
+  background: green;
+}
+li:nth-child(even) {
+  background: red;
+} */
+
+/* li:first-child {
+  background: green;
+}
+
+li:nth-child(1) {
+  color: red;
+}
+
+li:last-child {
+  background: green;
+} */
+
+/* pseudo elements */
+/* .new::first-letter {
+  font-size: 30px;
+}
+
+section::first-line {
+  background-color: red;
+} */
+
+/* 
+slector[attribute]{
+    property: value;
+} 
+slector[attribute='value']{
+    property: value;
+} 
+*/
+/* input[type="email"] {
+  background-color: red;
+}
+
+p[class="p"] {
+  background-color: green;
+  color: red;
+} */
+
+/* multiple element selector */
+
+div section,
+ul li:first-child,
+p:first-child::first-line {
+  color: green;
+}

@@ -1,0 +1,63 @@
+/* css syntax */
+/* selector {
+  property: value
+} */
+
+/* h1 {
+  color: green;
+  font-size: 50px;
+  font-family: sans-serif;
+  border: 3px solid red;
+} */
+
+/* css selectors */
+/* element/tag selector - done by selecting the tag or element name */
+
+/* h1 {
+  color: green;
+}
+
+p {
+  color: red;
+}
+
+div {
+  color: blue;
+} */
+
+/* class selector - done by selecting a class using a period (dot) */
+/* they are not unique - they can be applied to more than one element */
+
+/* .primary {
+  color: white;
+  background-color: blue;
+} */
+
+/* id selector - done by selecting and id using a number symbol (#) */
+/* #custom-text {
+  color: tomato;
+  background-color: green;
+} */
+
+/*  */
+
+/* div {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.red {
+  background-color: red;
+}
+
+#new {
+  background-color: green;
+} */
+
+
+/* css syntax */
+selector {
+  property: value
+}

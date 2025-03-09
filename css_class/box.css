@@ -1,0 +1,56 @@
+/* 
+a {
+  border: 1px solid red;
+}
+
+h1 {
+  border: 1px solid red;
+  padding: 20px;
+  margin: 50px;
+}
+ */
+
+h1 {
+  /* border: 1px solid red; */
+  /* single value -> 50px all round */
+  /* padding: 50px; */
+
+  /* 2 values -> first (top and bottom), second (left and right) */
+  /* padding: 50px 200px; */
+
+  /* 3 values-> first (top), second(left and right), third(bottom) */
+  /* padding: 50px 200px 10px; */
+
+  /* 4 values-> first (top), second(left) third(right), forth(bottom) */
+  /* padding: 50px 200px 10px 30px; */
+}
+
+h1 {
+  /* border: 1px solid red; */
+  /* single value -> 50px all round */
+  /* margin: 50px; */
+
+  /* 2 values -> first (top and bottom), second (left and right) */
+  /* margin: 50px 200px; */
+
+  /* 3 values-> first (top), second(left and right), third(bottom) */
+  /* margin: 50px 200px 10px; */
+
+  /* 4 values-> first (top), second(left) third(right), forth(bottom) */
+  /* margin: 50px 200px 10px 30px; */
+}
+
+/* shadow */
+h1 {
+  color: black;
+  text-shadow: 3px 3px 3px purple;
+
+  /* 2 values -> horizontal and vertical */
+  /* 3 values -> horizontal vertical and blur */
+  /* 4 values -> horizontal, vertical, blur and spread */
+}
+
+h1 {
+  border: 1px solid black;
+  box-shadow: 10px 10px 10px 10px rgba(255, 0, 0, 0.3) inset;
+}
