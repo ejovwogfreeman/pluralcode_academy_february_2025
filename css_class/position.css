@@ -1,0 +1,50 @@
+/* types of css position */
+/* 
+1) static - default position with which all elements comes into our web page
+2) relative - position of an element with respect to its original position
+3) fixed - positon of an element with respect to the browser
+4) absolute - the positioin of an element with respect to its parent container
+5) sticky - this combines the behaviour of static and fixed
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* relative position */
+/* h1 {
+  position: relative;
+  left: 200px;
+  top: 200px;
+} */
+
+/* fixed position */
+h1 {
+  /* position: fixed; */
+  /* left: 200px;
+  top: 200px; */
+  /* right: 20px; */
+  /* top: 200px; */
+  /* left: 0px;
+  bottom: 0px; */
+}
+
+/* absolute position */
+
+#box {
+  height: 300px;
+  border: 1px solid red;
+  margin: 30px;
+  position: relative;
+}
+h1 {
+  position: absolute;
+  right: 300px;
+  bottom: 50px;
+}
+
+h2 {
+  position: sticky;
+  top: 0px;
+}
