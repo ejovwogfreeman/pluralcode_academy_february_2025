@@ -1,0 +1,218 @@
+/* h1 {
+  color: red;
+  transition: 0.5s ease-in-out;
+}
+
+h1:hover {
+  color: blue;
+} */
+
+/* transition */
+
+/* button {
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.5s ease-in-out;
+}
+
+button:hover {
+  transform: scale(0.3);
+} */
+
+/* .box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  transition: 0.5s ease-in-out;
+} */
+
+/* .box:hover {
+  background-color: red;
+} */
+
+/* keyframes */
+
+/* .box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: animation1;
+  animation-duration: 5s;
+} */
+
+@keyframes animation1 {
+  /* from {
+    background-color: red;
+  }
+  to {
+    background-color: green;
+  } */
+}
+
+/* @keyframes animation1 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: purple;
+  }
+} */
+
+.box {
+  /* width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: move;
+  animation-duration: 2s; */
+  /* animation-delay: 2s; */
+  /* animation-iteration-count: infinite;
+  position: relative; */
+}
+
+/* @keyframes move {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+} */
+
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+} */
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: changeBackground;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+}
+
+header {
+  /* background-color: red; */
+  /* background-image: url("images.jpeg"); */
+  /* background: green; */
+  /* background: url("images.jpeg"); */
+  /* background: linear-gradient(red, blue); */
+  background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(0, 0, 255, 0.3)),
+    url("images.jpeg");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header div {
+  text-align: center;
+}
+
+header div h1 {
+  margin-bottom: 10px;
+}
+
+header div a {
+  background-color: blue;
+  color: white;
+  padding: 3px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.5s ease-in-out;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+}
+
+.container {
+  padding: 20px;
+}
+
+.container div {
+  margin-bottom: 10px;
+  padding: 10px;
+}
