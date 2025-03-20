@@ -20,7 +20,7 @@
       </div>
       <div class="main-nav">
         <span class="logo">
-          <img src="img/codefest.png" alt="" width="70px" />
+          <img src="img/codefest.png" alt="logo" width="70px" />
           <h1>SITELOGO</h1>
         </span>
         <ul>
@@ -32,6 +32,9 @@
           <li><a href="">Appointment</a></li>
           <li><a href="">Patient Record</a></li>
         </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="bi bi-list"></i>
+        </div>
       </div>
     </nav>
     <header>
@@ -297,4 +300,10 @@
       </div>
     </footer>
   </body>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector("nav .main-nav ul");
+      menu.classList.toggle("active");
+    }
+  </script>
 </html>
