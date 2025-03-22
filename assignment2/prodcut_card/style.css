@@ -51,9 +51,11 @@ body {
   color: #b5b6ba;
   letter-spacing: 10px;
 }
+
 .product-card .description .title {
   margin-bottom: 20px;
 }
+
 .product-card .description .text {
   margin-bottom: 20px;
   color: #b5b6ba;
