@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Landing</title>
+    <!-- bootstrap css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar component -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+      <div class="container">
+        <a class="navbar-brand text-primary" href="#"
+          ><h2><i class="bi bi-bootstrap-fill me-2"></i>BootsLand</h2></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="home"></div>
+
+    <!-- carousel compnent -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="dark-bg"></div>
+          <img src="img/food.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="dark-bg"></div>
+          <img src="img/food.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="dark-bg"></div>
+          <img src="img/food.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </body>
+
+  <!-- About section -->
+  <div class="container py-5" id="about">
+    <div class="text-center pb-3">
+      <h1>About</h1>
+      <p>
+        About Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+        consectetur velit
+      </p>
+    </div>
+    <div class="d-flex flex-lg-row flex-column-reverse">
+      <div style="flex: 1" class="pe-lg-5 pe-0 pt-lg-0 pt-5">
+        <h2>Voluptatem dignissimos provident quasi corporis</h2>
+        <p style="font-style: italic">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqu
+        </p>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <i class="bi bi-check-circle text-primary"></i> Ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle text-primary"></i> Duis aute irure
+            dolor in reprehenderit in voluptate velit.
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle text-primary"></i>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate trideta storacalaperda
+            mastiro dolore eu fugiat nulla pariatur.
+          </li>
+        </ul>
+        <button class="btn btn-primary">
+          Read More <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+      <div style="flex: 1">
+        <img src="img/nutr.webp" alt="" class="w-100" />
+      </div>
+    </div>
+  </div>
+  <!-- stats section -->
+  <div class="bg-light py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <i class="text-primary bi bi-emoji-smile" style="font-size: 50px"></i>
+          <div class="ms-2">
+            <h1>232</h1>
+            <small
+              ><strong>Happy Clients</strong> <br />
+              consequuntur quae</small
+            >
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <i
+            class="text-primary bi bi-journal-medical"
+            style="font-size: 50px"
+          ></i>
+          <div class="ms-2">
+            <h1>232</h1>
+            <small
+              ><strong>Happy Clients</strong> <br />
+              consequuntur quae</small
+            >
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <i class="text-primary bi bi-headset" style="font-size: 50px"></i>
+          <div class="ms-2">
+            <h1>232</h1>
+            <small
+              ><strong>Happy Clients</strong> <br />
+              consequuntur quae</small
+            >
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12 d-flex">
+          <i class="text-primary bi bi-people" style="font-size: 50px"></i>
+          <div class="ms-2">
+            <h1>232</h1>
+            <small
+              ><strong>Happy Clients</strong> <br />
+              consequuntur quae</small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- serv section -->
+  <div class="container py-5" id="services">
+    <div class="text-center pb-3">
+      <h1>Services</h1>
+      <p>
+        About Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+        consectetur velit
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="py-5 px-4 mb-4 shadow">
+          <i class="text-primary bi bi-emoji-smile" style="font-size: 30px"></i>
+          <h3>Lorem Ipsum</h3>
+          <p>
+            About Necessitatibus eius consequatur ex aliquid fuga eum quidem
+            sint consectetur velit
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="py-5 px-4 mb-4 shadow">
+          <i class="text-primary bi bi-emoji-smile" style="font-size: 30px"></i>
+          <h3>Lorem Ipsum</h3>
+          <p>
+            About Necessitatibus eius consequatur ex aliquid fuga eum quidem
+            sint consectetur velit
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="py-5 px-4 mb-4 shadow">
+          <i class="text-primary bi bi-emoji-smile" style="font-size: 30px"></i>
+          <h3>Lorem Ipsum</h3>
+          <p>
+            About Necessitatibus eius consequatur ex aliquid fuga eum quidem
+            sint consectetur velit
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="py-5 px-4 mb-4 shadow">
+          <i class="text-primary bi bi-emoji-smile" style="font-size: 30px"></i>
+          <h3>Lorem Ipsum</h3>
+          <p>
+            About Necessitatibus eius consequatur ex aliquid fuga eum quidem
+            sint consectetur velit
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-bg">
+    <div class="container text-center text-light">
+      <h1>Call To Action</h1>
+      <p class="my-4">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <a href="" class="btn-outline-primary">Call To Action</a>
+    </div>
+  </div>
+
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, adipisci!
+  Reprehenderit fugiat assumenda doloremque alias quae consequatur eius aliquid
+  aut. Reiciendis autem tempora vel perspiciatis ex deleniti fugiat quaerat,
+  unde facilis nobis delectus aut amet, dicta officia esse commodi asperiores in
+  laudantium doloremque earum voluptates est fugit veniam quibusdam! Officiis
+  modi omnis totam asperiores. Amet nisi consequatur dicta blanditiis sapiente
+  soluta officia aspernatur similique dolorem quibusdam iste, nostrum ab at
+  commodi facere. Earum minima accusantium aut provident doloremque sed dolorem
+  magni maxime veniam iure dignissimos, corrupti, esse quae accusamus obcaecati
+  non suscipit delectus laborum hic nemo dicta in. Fuga aut ducimus optio minus
+  quo doloremque quasi doloribus, nisi laboriosam aperiam? Rem quo inventore
+  consequatur amet molestiae quod officiis minima ea cupiditate non, possimus
+  quisquam impedit numquam! Dicta maxime quia hic nesciunt odio recusandae
+  facere nostrum molestias modi pariatur ex, maiores eius alias? Repudiandae
+  voluptatum, magnam quibusdam eos ipsam eius, voluptates commodi molestiae
+  ipsum dignissimos et blanditiis tenetur, accusantium excepturi cupiditate
+  nihil! Necessitatibus reprehenderit sapiente facere consectetur! Expedita eum
+  obcaecati dignissimos, excepturi ut quae cum eligendi, perferendis deserunt
+  commodi quis aperiam harum reprehenderit quo, minima cupiditate eos libero
+  quam unde aut culpa delectus? Sunt doloribus aliquam tenetur vel odit
+  laboriosam quia praesentium, voluptas velit voluptatum adipisci deleniti
+  corporis reiciendis neque. Beatae facilis omnis est obcaecati hic repellendus
+  fugiat, odit quam dolorum! Nam recusandae, alias sunt reprehenderit, itaque
+  quibusdam unde amet numquam iste, similique quisquam quos voluptas rem! Quo
+  debitis, mollitia hic neque facere possimus veniam, quisquam odit ea
+  necessitatibus repellat? Quis esse magni in blanditiis praesentium,
+  consequatur mollitia recusandae est molestiae. Ipsam quisquam architecto
+  magni, cupiditate suscipit voluptate deleniti quam, facilis perferendis
+  similique fugiat alias deserunt error, mollitia sapiente? Ut quae enim omnis
+  explicabo, eum, neque facere possimus ipsa placeat veniam fugiat provident
+  debitis molestiae recusandae qui ad blanditiis quaerat, tempore ab! Ad eveniet
+  iusto sit consequuntur commodi ex voluptatem quo a repellat, ut cupiditate
+  dolore magni, debitis odit reiciendis dolorum officiis pariatur ipsa? Eveniet,
+  voluptate? Iusto reiciendis quaerat pariatur nam, iste in cumque vero maiores
+  quasi aliquam corrupti fugit vitae facere! Provident, nesciunt ea temporibus
+  voluptates voluptatum quia quod laudantium illo cum, molestias facere eos
+  commodi deserunt maiores doloribus iste quaerat ipsum ab. Blanditiis ut
+  tenetur rerum, dolorum pariatur modi nisi, voluptatibus corporis repellendus
+  deserunt aliquid dolores eligendi. Expedita ea porro dignissimos, dolorem
+  iusto earum in asperiores pariatur impedit cumque tempore quisquam ducimus
+  error molestias. Rem quaerat tenetur dolore harum cupiditate sint iste amet,
+  itaque ratione aspernatur dolorem laboriosam consectetur exercitationem,
+  impedit illum? Atque natus deserunt perspiciatis culpa! Quas debitis voluptas
+  quidem, cumque asperiores impedit ad. Soluta debitis dolores placeat qui
+  nulla, dicta culpa aperiam fuga dolor, animi impedit deleniti dignissimos
+  recusandae nisi. Eveniet quae ullam amet. Culpa veritatis ea cumque iusto
+  laudantium vel eos delectus quisquam. Adipisci eum dolore corrupti,
+  necessitatibus doloremque non hic. Autem magnam dolorem assumenda suscipit
+  dignissimos repellendus expedita accusamus hic fuga quaerat dolorum sit
+  corrupti voluptates, voluptas laborum quia animi asperiores beatae repellat
+  distinctio quas doloremque illo! Nemo, expedita enim. Voluptatibus
+  perspiciatis ipsa adipisci magnam?
+
+  <!-- js cdn -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>
