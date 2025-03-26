@@ -1,6 +1,8 @@
 :root {
   --primary: #1bbca3;
   --hover: #13aa94;
+  --dark: #0e1a18;
+  --shade: rgba(27, 188, 163, 0.08);
 }
 
 .btn-primary {
@@ -52,4 +54,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.serv-img {
+  transition: 0.3s ease-in-out;
+}
+
+.serv-img:hover {
+  transform: scale(0.9);
+}
+
+.portfolio-img {
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-img:hover {
+  transform: scale(1.05);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.bg-shade {
+  background-color: var(--shade);
 }
