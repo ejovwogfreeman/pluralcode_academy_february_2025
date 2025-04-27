@@ -547,13 +547,304 @@ line comment */
 
 // const functionName = (param) => {};
 
-const greet = () => {
-  return "hello world";
-};
+// const greet = () => {
+//   return "hello world";
+// };
 
-const addNums = (x, y) => {
-  return x + y;
-};
+// const addNums = (x, y) => {
+//   return x + y;
+// };
 
-console.log(greet());
-console.log(addNums(6, 7));
+// console.log(greet());
+// console.log(addNums(6, 7));
+
+// function greet(name, time) {
+//   return "Hello " + name + ", good " + time;
+// }
+
+// const greet = (name, time) => {
+//   return `Hello ${name} good ${time}`;
+// };
+
+// console.log(greet("Godbless", "morning"));
+// console.log(greet("Maxwell", "evening"));
+
+// function greetPerson(name) {
+//   return "Hello " + name;
+// }
+
+// console.log(greetPerson("Godbless"));
+// console.log(greetPerson("Freeman"));
+// console.log(greetPerson("Powell"));
+
+// 8 lines of code
+
+// function cleanBoard(name = "Godbless") {
+//   return name + ", clean the board";
+// }
+
+// console.log(cleanBoard("Maxwell"));
+// console.log(cleanBoard());
+// console.log(cleanBoard());
+
+// let numSum = (num1, num2) => {
+//   return num1 + num2;
+// };
+
+// console.log(numSum(4, 10));
+
+// temp in k to c
+// function kelvinToCelcius(kelvinTemp) {
+//   return `The tem ${kelvinTemp}k in celcius is ${kelvinTemp - 273}`;
+// }
+
+// // 20k to cel
+// // temp in c to k
+// function celciusToKelvin(celciusTemp) {
+//   return `The tempearture ${celciusTemp}celcius in kelvin is ${
+//     celciusTemp + 273
+//   }`;
+//   // return "The tem " + celciusTemp + "celcius in kelvin is " + celciusTemp + 273;
+// }
+
+// console.log(celciusToKelvin(20));
+
+// function dollarToNaira(dollar) {
+//   return dollar * 1600;
+// }
+
+// console.log(dollarToNaira(50));
+
+// // global scoped
+// let items = [];
+
+// function addItem(item) {
+//   items.push(item);
+//   console.log(items);
+// }
+
+// console.log(item); //local variable not accessible outside the function
+
+// addItem("butter");
+
+// addItem("peanut butter");
+
+// addItem("jam");
+
+// if (true) {
+//   var blockvar = "hello world";
+// }
+
+// for(){}
+
+// while(){
+
+// }
+
+// function(){
+
+// }
+
+// console.log(blockvar);
+
+// let x = 3;
+
+// function accessX() {
+//   var y = 5; // local scoped
+//   return "x is " + x;
+// }
+
+// console.log(accessX());
+// console.log(y); // local scoped
+
+// if (true) {
+//   var y = 5;
+// }
+
+// console.log(y);
+
+// 1) any variable declared outside a function is globally scopoed
+// 2) any variable declared inside a function is locally scoped
+// 3) let and const are block scoped e.g if
+// 4) function scope var
+
+// block scope (let and const)
+
+// function testScope() {
+//   if (true) {
+//     let blockScope = "I exist only in this block";
+//     const blockScope2 = "I exist in this scope too";
+
+//     // console.log(blockScope);
+//     // console.log(blockScope2);
+//   }
+
+//   console.log(blockScope);
+//   console.log(blockScope2);
+// }
+
+// testScope();
+
+// function scope
+
+// function testScope() {
+//   if (true) {
+//     var funcScope = "I am a func scope";
+//     console.log(funcScope);
+//   }
+//   console.log(funcScope);
+// }
+
+// testScope();
+
+// functions are hosited (to the top)
+
+// we can use a function even before delcaring it
+// testFunc();
+
+// function testFunc() {
+//   console.log("hello test func");
+// }
+
+// console.log(x);
+
+// let x = 6;
+
+// reoucrring ()
+// timer
+
+// function outer() {
+//   let outerVar = "outer variable";
+
+//   function inner() {
+//     return outerVar;
+//   }
+
+//   return inner;
+// }
+
+// let outerRes = outer();
+
+// let innerRes = outerRes();
+
+// console.log(innerRes);
+
+// function greet() {
+//   return "Hello world";
+// }
+
+// console.log(greet());
+
+// function counter() {
+//   let count = 0;
+
+//   function increase() {
+//     count += 1;
+//     console.log("the current count is " + count);
+//   }
+
+//   return increase;
+// }
+
+// let increase = counter();
+// increase();
+// increase();
+// increase();
+
+// call back function (when you call a function inside another function)
+
+function getPerson() {
+  return "Godbless";
+}
+
+function greetPerson() {
+  return getPerson() + " good morning";
+}
+
+console.log(greetPerson());
+
+// closure (wen you define a function inside another function and return the new function inside the old function )
+// closure (when the return statement of a function is a function)
+
+// function createPerson(name) {
+//   function greetPerson() {
+//     console.log("Hello my name is " + name);
+//   }
+//   return greetPerson;
+// }
+
+// createPerson("John")();
+
+// function createPerson2(name) {
+//   return greetPerson(){
+
+//   }
+// }
+
+// function counter() {
+//   let count = 0;
+
+//   function incCount() {
+//     count += 1;
+//     console.log(count);
+//   }
+
+//   return incCount;
+// }
+
+// let inc = counter();
+// inc();
+// inc();
+// inc();
+
+// let myArr = ["Godbless", "Miracle", "Chidinma", "Khaleed", "Ojo"];
+
+// let myArr = new Array("Godbless", "Miracle", "Chidinma", "Khaleed", "Ojo");
+
+// console.log(myArr[0]); //gives the first item
+// console.log(myArr[myArr.length - 1]); //gives the last item
+
+// array methods
+// push() -> adds to the end of an array
+
+// myArr.push("Billy", "Maxwell", "Joseph");
+
+// console.log(myArr);
+
+// // pop() -> removes from the end of an array
+
+// myArr.pop();
+// myArr.pop();
+// console.log(myArr);
+
+// // shift()-> removes from the beginning
+
+// myArr.shift();
+// myArr.shift();
+// console.log(myArr);
+
+// // unshift()-> adds to the beginning of an array
+
+// myArr.unshift("Mark Powell", "Robert", "Stark");
+
+// console.log(myArr);
+
+let myArr = ["Godbless", "Miracle", "Chidinma", "Khaleed", "Ojo"];
+console.log(myArr);
+
+// slice -> removes part of an array but returns the initial array when the array is called
+// i.e slice does not mutate the array
+// it takes start and end index
+
+// let slicedArr = myArr.slice(0, 3);
+// let slicedArr2 = myArr.slice(2, 3);
+// console.log(slicedArr2);
+
+// splice -> removes part of an array and returns the remaining element when the array is called
+// i.e splice mutates the array
+// it takes start index and length)
+
+let splicedArr = myArr.splice(0, 3);
+console.log(splicedArr);
+
+console.log(myArr);
