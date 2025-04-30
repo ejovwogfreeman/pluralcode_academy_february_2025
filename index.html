@@ -1,0 +1,134 @@
+<script>
+  ////////////////////////////////////////////////////////
+  //////////small program using set and map///////////////
+  ////////////////////////////////////////////////////////
+  //   const guestSet = new Set();
+  //   const guestMap = new Map();
+
+  //   function addGuest() {
+  //     const name = prompt("Enter guest name:");
+  //     if (!name) return;
+
+  //     if (guestSet.has(name)) {
+  //       alert(`${name} is already on the list.`);
+  //       return;
+  //     }
+
+  //     const age = prompt("Enter age:");
+  //     const rsvp = prompt("RSVP (yes/no):");
+
+  //     guestSet.add(name);
+  //     guestMap.set(name, { age, rsvp });
+  //     alert(`${name} added to the list.`);
+  //   }
+
+  //   function listGuests() {
+  //     if (guestSet.size === 0) {
+  //       alert("Guest list is empty.");
+  //       return;
+  //     }
+
+  //     let guestList = "🎉 Guest List:\n";
+  //     guestSet.forEach((name) => {
+  //       const { age, rsvp } = guestMap.get(name);
+  //       guestList += `${name} (Age: ${age}) - RSVP: ${rsvp}\n`;
+  //     });
+  //     alert(guestList);
+  //   }
+
+  //   function removeGuest() {
+  //     const name = prompt("Enter name to remove:");
+  //     if (!guestSet.has(name)) {
+  //       alert(`${name} is not in the list.`);
+  //       return;
+  //     }
+
+  //     guestSet.delete(name);
+  //     guestMap.delete(name);
+  //     alert(`${name} removed from the list.`);
+  //   }
+
+  //   function checkGuest() {
+  //     const name = prompt("Enter name to check:");
+  //     if (guestSet.has(name)) {
+  //       alert(`${name} is on the list.`);
+  //     } else {
+  //       alert(`${name} is not invited.`);
+  //     }
+  //   }
+
+  //   function showMenu() {
+  //     let choice;
+  //     do {
+  //       choice = prompt(
+  //         "Party Guest Manager 🎉\n\nChoose an action:\n1. Add Guest\n2. List Guests\n3. Remove Guest\n4. Check Guest\n5. Exit"
+  //       );
+
+  //       switch (choice) {
+  //         case "1":
+  //           addGuest();
+  //           break;
+  //         case "2":
+  //           listGuests();
+  //           break;
+  //         case "3":
+  //           removeGuest();
+  //           break;
+  //         case "4":
+  //           checkGuest();
+  //           break;
+  //         case "5":
+  //           alert("Goodbye!");
+  //           break;
+  //         default:
+  //           alert("Invalid choice.");
+  //       }
+  //     } while (choice !== "5");
+  //   }
+
+  //   // Start the app
+  //   showMenu();
+
+  //////////////////////////////////////////////////
+  //////////small program/ using array//////////////
+  //////////////////////////////////////////////////
+
+  // var rooster = [];
+
+  // function addName() {
+  //   var name = prompt("please add a name");
+  //   rooster.push(name);
+  // }
+
+  // function removeName() {
+  //   var name = prompt("please remove a name");
+  //   rooster.splice(rooster.indexOf(name), 1);
+  // }
+
+  // function displayNames() {
+  //   alert(rooster);
+  // }
+
+  // alert("Welcome to my school");
+  // var question = prompt("Would you like to register? y/n");
+  // var reply;
+
+  // if (question === "y") {
+  //   while (reply !== "quit") {
+  //     reply = prompt("please add, remove, display or quit");
+  //     if (reply === "add") {
+  //       addName();
+  //     } else if (reply === "remove") {
+  //       removeName();
+  //     } else if (reply === "display") {
+  //       displayNames();
+  //     } else if (reply === "quit") {
+  //       alert("Thanks for participating, refresh to start again");
+  //     } else {
+  //       alert("Invalid input");
+  //     }
+  //   }
+  // } else {
+  //   alert("Thanks for participating, refresh to start again");
+  // }
+</script>

@@ -753,15 +753,7 @@ line comment */
 
 // call back function (when you call a function inside another function)
 
-function getPerson() {
-  return "Godbless";
-}
-
-function greetPerson() {
-  return getPerson() + " good morning";
-}
-
-console.log(greetPerson());
+// s
 
 // closure (wen you define a function inside another function and return the new function inside the old function )
 // closure (when the return statement of a function is a function)
@@ -829,8 +821,8 @@ console.log(greetPerson());
 
 // console.log(myArr);
 
-let myArr = ["Godbless", "Miracle", "Chidinma", "Khaleed", "Ojo"];
-console.log(myArr);
+// let myArr = ["Godbless", "Miracle", "Chidinma", "Khaleed", "Ojo"];
+// console.log(myArr);
 
 // slice -> removes part of an array but returns the initial array when the array is called
 // i.e slice does not mutate the array
@@ -844,7 +836,177 @@ console.log(myArr);
 // i.e splice mutates the array
 // it takes start index and length)
 
-let splicedArr = myArr.splice(0, 3);
-console.log(splicedArr);
+// let splicedArr = myArr.splice(0, 3);
+// console.log(splicedArr);
 
-console.log(myArr);
+// console.log(myArr);
+
+// let myArr = ["Godbless", "Miracle", "Chidinma", "Khaleed", "Ojo"];
+
+// myArr.splice(1, 1, "newname", "newnameagain", "allover");
+
+// console.log(myArr);
+
+// console.log(myArr.indexOf("Khaleed"));
+
+// indexOf() -> a method that returns the index of an element in an array
+
+// arrat iteration methods
+// looping throug arrays
+
+// forEach()
+
+// myArr.forEach((name) => console.log(name));
+
+// myArr.forEach((name, index) => {
+//   console.log(name + " - " + index);
+// });
+
+// myArr.forEach(function (name) {
+//   console.log(name);
+// });
+
+// let myFunc = function () {};
+
+// let myFunc = ()=> {
+
+// }
+
+// function myFunc(){
+
+// }
+
+// myArr.map((name) => {
+//   console.log(name);
+// });
+
+// let filteredArr = myArr.filter((x) => x !== "Miracle");
+
+// let filteredArr = [];
+// for (let i = 0; i < myArr.length; i++) {
+//   if (myArr[i] !== "Miracle") {
+//     filteredArr.push(myArr[i]);
+//   }
+// }
+
+// console.log(filteredArr);
+
+// console.log(filteredArr);
+
+// let scores = [90, 88, 78];
+
+// let aggregate = scores.reduce((a, b) => a + b, 0);
+
+// console.log(aggregate);
+
+// console.log(aggregate);
+// let aggregate = 0;
+// for (let i = 0; i < scores.length; i++) {
+//   aggregate += scores[i];
+// }
+
+// console.log(aggregate);
+
+// let scores = [90, 77, 10, 68, 23, 44, 79];
+
+// scores.sort(); -> sorts in ascending by default
+
+// scores.reverse(); //reverses an array
+
+// let soretedArr = scores.sort((a, b) => b - a); -> sorts array in descending order (from b to a)
+
+// console.log(soretedArr);
+
+// let myArr = ["Godbless", "Miracle", "Chidinma", "Khaleed", "Ojo"];
+
+// let name = myArr.find((x) => x == "Godbless");
+// let name = myArr.findIndex((x) => x == "Joshua");
+
+// let nums = [1, 2, 3, 4, 5];
+
+// let bigNums = nums.find((x) => x > 3);
+
+// console.log(bigNums);
+
+// let matrix = [
+//   [1, 2, 3, 4, 5],
+//   [6, 7, 8, 9, 10],
+//   [11, 12, 13, 14, 15],
+// ];
+
+// console.log(matrix[2][0]);
+
+// let matrix = [
+//   [1, 2],
+//   [3, 4],
+// ];
+
+// flat() -> reduces the dimension of an Array
+
+// let flatArr = matrix.flat();
+
+// console.log(flatArr);
+
+// let arr = ["godbless", "freeman", "lancelot"];
+
+// // console.log(typeof arr);
+
+// console.log(Array.isArray(arr));
+
+// arr, objecte, set and maps
+
+// arr -> []
+// obj - {}
+
+// let person = {
+//   name: "godbless",
+//   age: 77,
+//   isAdmin: true,
+//   subjectComb: ["math", "eng", "chem", "phy"],
+//   socials: {
+//     fb: "gbmedia",
+//     twt: "thegbmedia",
+//     inst: "theg.meida",
+//     emails: {
+//       gmail: "gb@gmail.com",
+//       yahoo: "gb@yahoo.com",
+//       hotmail: "gb@hotmail.com",
+//     },
+//   },
+// };
+
+// dot notation and key-index methods
+
+// console.log(person.name);
+// console.log(person.subjectComb[person.subjectComb.length - 1]);
+
+// console.log(person["age"]);
+
+// person.school = "uniben";
+
+// console.log(person.socials.twt);
+
+// for (let key in person) {
+//   console.log(person[key]);
+// }
+
+// console.log(person.name);
+
+// let { name, subjectComb } = person;
+
+// console.log(subjectComb);
+
+// 1) var & data types
+// 2) functions
+// 3) loops
+// 4) control flow
+
+// assignment-> build a shopping cart that shows 4 prompt(add, remove, display and quit)
+// when we type add -> it should prompt us to enter
+// an item to add to our cart
+// when we type remove -> it should prompt us to enter
+// a name to remove from our cart and it will be removed from the cart
+// when we type display -> it should display all the items on our cart
+// when we type quit -> it should quit or close the program
+
+// NB: cart is an array
