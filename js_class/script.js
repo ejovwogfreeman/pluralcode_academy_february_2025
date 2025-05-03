@@ -1010,3 +1010,271 @@ line comment */
 // when we type quit -> it should quit or close the program
 
 // NB: cart is an array
+
+// create a cart (an empty array)
+// let cart = [];
+
+// // add item function
+// function addItem() {
+//   let item = prompt("enter a name to add:");
+//   cart.push(item);
+// }
+
+// // remove item function
+// function removeItem() {
+//   let name = prompt("enter a name to remove:");
+//   //   item.splice(startIndex, length)
+//   cart.splice(cart.indexOf(name), 1);
+// }
+
+// // display item function
+// function displayItems() {
+//   alert(cart);
+// }
+
+// alert("Hello welcome to gb stores");
+
+// let question = prompt("would like to shop? (y/n): ");
+
+// let reply;
+
+// if (question === "y") {
+//   // do something
+//   while (reply !== "quit") {
+//     reply = prompt("would you like to add, remove, display or quit ?");
+//     if (reply === "add") {
+//       addItem();
+//     } else if (reply === "remove") {
+//       removeItem();
+//     } else if (reply === "display") {
+//       displayItems();
+//     } else if (reply === "quit") {
+//       alert("Thnks for visiting my shop");
+//     } else {
+//       alert("Invalid input");
+//     }
+//   }
+// } else {
+//   alert("thanks for visiting my shop");
+// }
+
+// array
+// let myArr = new Array("godbless", "freeman", "godbless");
+
+// let mySet = new Set(["godbless", "freeman", "godbless"]);
+
+// let mySet = new Set(); // creates a new set or empty set
+
+// mySet.add("godbless"); //adds a new element to a set
+// mySet.add("freeman"); //adds a new element to a set
+// mySet.add("lancelot"); //adds a new element to a set
+
+// console.log(mySet.has("maxwell")); //checks if a set has a certain value
+
+// console.log(mySet);
+
+// mySet.forEach((x) => console.log(x));
+
+// mySet.forEach((x) => console.log(x));
+
+// const x = mySet.values();
+
+// let x = "";
+// for (let i of mySet.values()) {
+//   x += i;
+// }
+// console.log(x);
+
+// console.log(mySet);
+
+// mySet.delete("freeman");
+// console.log(mySet);
+
+// let person = {
+//   name: "godbless",
+//   age: 77,
+//   isAdmin: true,
+//   subjectComb: ["math", "eng", "chem", "phy"],
+//   socials: {
+//     fb: "gbmedia",
+//     twt: "thegbmedia",
+//     inst: "theg.meida",
+//     emails: {
+//       gmail: "gb@gmail.com",
+//       yahoo: "gb@yahoo.com",
+//       hotmail: "gb@hotmail.com",
+//     },
+//   },
+// };
+
+// console.log(person);
+
+// let myMap = new Map(); //creates a new map
+// myMap.set("name", "Godbless"); //add element to a map
+
+// crating a simple map
+// let myMap = new Map([
+//   ["name", "godbless"],
+//   ["school", "pluralcode"],
+//   [2001, "first Company"],
+// ]);
+
+// let myMap = new Map();
+// myMap.set("name", "godbless");
+// myMap.set("company", "pluralcode");
+// myMap.set(2001, "first company");
+
+// console.log(myMap);
+
+// myMap.forEach((val, key) => {
+//   console.log(`${key} - ${val}`);
+// });
+
+// let arr = ["godbless", "freeman", "lancelot"];
+// arr.forEach((name, index) => {
+//   console.log(`${index} - ${name}`);
+// });
+
+// Set, Map, Array, Object;
+
+// console.log(myMap.get("company"));
+
+// mini task (assignment) (NB: it should promot you to enter an input)
+// Assuming you're managing a party and you need to do the following:
+// 1) keep track of unique guests using a set
+// 2) store additional details like age and RSVP status using map
+
+// HINTS:
+// 1) add guests to set (to avoid duplicates)
+// 2) store guest details (name->{age, rsvp}) in a map
+// 3) list all guests
+// 4) remove a guest
+// 5) check if a guest is invited
+
+// js strings
+// let myStr = "abcXYZ1234567";
+// let myStr2 = 'abcxyz';
+// let myStr3 = `abcxyz`;
+
+// length property
+// console.log(myStr.length);
+
+// accessing string elements
+// every first character of a string
+// console.log(myStr[0]);
+
+// every last character of string
+// console.log(myStr[myStr.length - 1]);
+
+// charAt
+// console.log(myStr.charAt(0)); //gives first character of a string
+// console.log(myStr.charAt(myStr.length - 1)); // gives last charter of a string
+
+// indexOf
+// console.log(myStr.indexOf("a"));
+// console.log(myStr.indexOf("b"));
+
+// myStr += "d";
+
+// slice(startIndex, endIndex) -> similar to array slice
+// stubstring(startIndex, endIndex) -> similar to array slice
+// console.log(myStr.slice(4, 5));
+// console.log(myStr.substring(4, 5));
+
+// stubstr(startIndex, length) -> similar to array splice
+
+// console.log(myStr.substr(0, 3));
+// console.log(myStr.substr(3, 5));
+
+// console.log(myStr.toLocaleUpperCase());
+// console.log(myStr.toLocaleLowerCase());
+
+// let name = "godbless";
+// let name2 = " god bless ";
+
+// console.log(name.length);
+// console.log(name2.length);
+
+// console.log(name2.trim()); // removes white spaces at the edge of the string
+
+// split methods -> converts strings to array
+
+// let name = "godbless";
+
+// console.log(name.split(""));
+
+// let email = "freeman007@compnany.net";
+
+// let username = email.split("@")[0];
+
+// console.log(username);
+
+// let name = "godbless";
+
+// console.log(name.replace("god", "jesus"));
+
+// /\d+/g
+
+// let regex = /\d+/g;
+
+// console.log("Price: 100 usd".match(regex));
+
+// function numberWithCommas(x) {
+//   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+// }
+
+// console.log(numberWithCommas(1000000));
+
+// date and time object
+// let completeCurrentDateAndTime = new Date();
+
+// console.log(completeCurrentDateAndTime);
+
+// let year = new Date().getFullYear();
+// let day = new Date().getDay();
+
+// [0, 1, 2, 3, 4, 5, 6];
+// let days = [
+//   "sunday",
+//   "monday",
+//   "tuesday",
+//   "wednesday",
+//   "thursday",
+//   "friday",
+//   "saturday",
+// ];
+
+// console.log(days[new Date().getDay()]);
+
+// let month = new Date().getUTCMonth();
+
+// let months = ["j", "f", "m", "a", "m", "j", "j", "a", "s", "o", "n", "d"];
+
+// console.log(months[month]);
+
+// let date = new Date().getDate();
+
+// console.log(date);
+
+// let time = new Date().getTime();
+
+// console.log(time);
+
+// let date = new Date().toDateString();
+
+// console.log(date);
+
+// let hour = new Date().getHours();
+
+// console.log(hour);
+
+// math object
+// console.log(Math.round(123.4)); // rounds off a number
+// console.log(Math.ceil(123.1)); // rounds up a number
+// console.log(Math.floor(123.7)); // rounds down a number
+// console.log(Math.pow(2, 5)); // gives power i.e 2 ** 5
+// console.log(Math.sqrt(9)); // sqrt of 9 as 3
+// console.log(Math.sqrt(6)); //sqrt of 6 as 2.4
+// console.log(Math.sqrt(16)); //sqrt of 16 as 4
+// console.log(Math.max(91, 17)); // max which is 91
+// console.log(Math.min(1, 17)); // min which is 1

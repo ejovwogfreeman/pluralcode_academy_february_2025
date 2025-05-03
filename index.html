@@ -2,92 +2,184 @@
   ////////////////////////////////////////////////////////
   //////////small program using set and map///////////////
   ////////////////////////////////////////////////////////
-  //   const guestSet = new Set();
-  //   const guestMap = new Map();
+  const guestSet = new Set();
+  const guestMap = new Map();
 
-  //   function addGuest() {
-  //     const name = prompt("Enter guest name:");
-  //     if (!name) return;
+  function addGuest() {
+    const name = prompt("Enter guest name:");
+    if (!name) return;
 
-  //     if (guestSet.has(name)) {
-  //       alert(`${name} is already on the list.`);
-  //       return;
-  //     }
+    if (guestSet.has(name)) {
+      alert(`${name} is already on the list.`);
+      return;
+    }
 
-  //     const age = prompt("Enter age:");
-  //     const rsvp = prompt("RSVP (yes/no):");
+    const age = prompt("Enter age:");
+    const rsvp = prompt("RSVP (yes/no):");
 
-  //     guestSet.add(name);
-  //     guestMap.set(name, { age, rsvp });
-  //     alert(`${name} added to the list.`);
-  //   }
+    guestSet.add(name);
+    guestMap.set(name, { age, rsvp });
+    alert(`${name} added to the list.`);
+  }
 
-  //   function listGuests() {
-  //     if (guestSet.size === 0) {
-  //       alert("Guest list is empty.");
-  //       return;
-  //     }
+  function listGuests() {
+    if (guestSet.size === 0) {
+      alert("Guest list is empty.");
+      return;
+    }
 
-  //     let guestList = "🎉 Guest List:\n";
-  //     guestSet.forEach((name) => {
-  //       const { age, rsvp } = guestMap.get(name);
-  //       guestList += `${name} (Age: ${age}) - RSVP: ${rsvp}\n`;
-  //     });
-  //     alert(guestList);
-  //   }
+    let guestList = "🎉 Guest List:\n";
+    guestSet.forEach((name) => {
+      const { age, rsvp } = guestMap.get(name);
+      guestList += `${name} (Age: ${age}) - RSVP: ${rsvp}\n`;
+    });
+    alert(guestList);
+  }
 
-  //   function removeGuest() {
-  //     const name = prompt("Enter name to remove:");
-  //     if (!guestSet.has(name)) {
-  //       alert(`${name} is not in the list.`);
-  //       return;
-  //     }
+  function removeGuest() {
+    const name = prompt("Enter name to remove:");
+    if (!guestSet.has(name)) {
+      alert(`${name} is not in the list.`);
+      return;
+    }
 
-  //     guestSet.delete(name);
-  //     guestMap.delete(name);
-  //     alert(`${name} removed from the list.`);
-  //   }
+    guestSet.delete(name);
+    guestMap.delete(name);
+    alert(`${name} removed from the list.`);
+  }
 
-  //   function checkGuest() {
-  //     const name = prompt("Enter name to check:");
-  //     if (guestSet.has(name)) {
-  //       alert(`${name} is on the list.`);
-  //     } else {
-  //       alert(`${name} is not invited.`);
-  //     }
-  //   }
+  function checkGuest() {
+    const name = prompt("Enter name to check:");
+    if (guestSet.has(name)) {
+      alert(`${name} is on the list.`);
+    } else {
+      alert(`${name} is not invited.`);
+    }
+  }
 
-  //   function showMenu() {
-  //     let choice;
-  //     do {
-  //       choice = prompt(
-  //         "Party Guest Manager 🎉\n\nChoose an action:\n1. Add Guest\n2. List Guests\n3. Remove Guest\n4. Check Guest\n5. Exit"
-  //       );
+  function showMenu() {
+    let choice;
+    do {
+      choice = prompt(
+        "Party Guest Manager 🎉\n\nChoose an action:\n1. Add Guest\n2. List Guests\n3. Remove Guest\n4. Check Guest\n5. Exit"
+      );
 
-  //       switch (choice) {
-  //         case "1":
-  //           addGuest();
-  //           break;
-  //         case "2":
-  //           listGuests();
-  //           break;
-  //         case "3":
-  //           removeGuest();
-  //           break;
-  //         case "4":
-  //           checkGuest();
-  //           break;
-  //         case "5":
-  //           alert("Goodbye!");
-  //           break;
-  //         default:
-  //           alert("Invalid choice.");
-  //       }
-  //     } while (choice !== "5");
-  //   }
+      switch (choice) {
+        case "1":
+          addGuest();
+          break;
+        case "2":
+          listGuests();
+          break;
+        case "3":
+          removeGuest();
+          break;
+        case "4":
+          checkGuest();
+          break;
+        case "5":
+          alert("Goodbye!");
+          break;
+        default:
+          alert("Invalid choice.");
+      }
+    } while (choice !== "5");
+  }
 
-  //   // Start the app
-  //   showMenu();
+  // Start the app
+  showMenu();
+
+  ////////////////////////////////////////////////////////
+  //////////small program using array and object version///////////////
+  ////////////////////////////////////////////////////////
+  const guestList = []; // Array of guest names
+  const guestDetails = {}; // Object: { name: { age, rsvp } }
+
+  function addGuest() {
+    const name = prompt("Enter guest name:");
+    if (!name) return;
+
+    if (guestList.includes(name)) {
+      alert(`${name} is already on the list.`);
+      return;
+    }
+
+    const age = prompt("Enter age:");
+    const rsvp = prompt("RSVP (yes/no):");
+
+    guestList.push(name);
+    guestDetails[name] = { age, rsvp };
+
+    alert(`${name} added to the list.`);
+  }
+
+  function listGuests() {
+    if (guestList.length === 0) {
+      alert("Guest list is empty.");
+      return;
+    }
+
+    let list = "🎉 Guest List:\n";
+    guestList.forEach((name) => {
+      const { age, rsvp } = guestDetails[name];
+      list += `${name} (Age: ${age}) - RSVP: ${rsvp}\n`;
+    });
+    alert(list);
+  }
+
+  function removeGuest() {
+    const name = prompt("Enter name to remove:");
+    const index = guestList.indexOf(name);
+    if (index === -1) {
+      alert(`${name} is not in the list.`);
+      return;
+    }
+
+    guestList.splice(index, 1); // remove from array
+    delete guestDetails[name]; // remove from object
+    alert(`${name} removed from the list.`);
+  }
+
+  function checkGuest() {
+    const name = prompt("Enter name to check:");
+    if (guestList.includes(name)) {
+      alert(`${name} is on the list.`);
+    } else {
+      alert(`${name} is not invited.`);
+    }
+  }
+
+  function showMenu() {
+    let choice;
+    do {
+      choice = prompt(
+        "Party Guest Manager (Array + Object Version) 🎉\n\nChoose an action:\n1. Add Guest\n2. List Guests\n3. Remove Guest\n4. Check Guest\n5. Exit"
+      );
+
+      switch (choice) {
+        case "1":
+          addGuest();
+          break;
+        case "2":
+          listGuests();
+          break;
+        case "3":
+          removeGuest();
+          break;
+        case "4":
+          checkGuest();
+          break;
+        case "5":
+          alert("Goodbye!");
+          break;
+        default:
+          alert("Invalid choice.");
+      }
+    } while (choice !== "5");
+  }
+
+  // Start the app
+  showMenu();
 
   //////////////////////////////////////////////////
   //////////small program/ using array//////////////
