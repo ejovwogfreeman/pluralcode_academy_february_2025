@@ -1,0 +1,14 @@
+<div id="outer" style="background-color: red">
+  <button id="inner">Click Me</button>
+</div>
+
+<script>
+  document.getElementById("outer").addEventListener("click", () => {
+    alert("Outer clicked");
+  });
+
+  document.getElementById("inner").addEventListener("click", (event) => {
+    // event.stopPropagation(); // Prevents outer's click from firing
+    alert("Inner clicked");
+  });
+</script>
