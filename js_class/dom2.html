@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .container {
+        width: 400px;
+        margin: auto;
+      }
+
+      h2 {
+        margin-top: 20px;
+      }
+      .lists li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .box {
+        padding: 20px;
+        background-color: blue;
+      }
+
+      .menu {
+        padding: 30px;
+        background-color: red;
+      }
+      .menu li {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>JS DOM</h1>
+      <form action="">
+        <label for="">Name</label><br />
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="e.g John Doe"
+        /><br /><br />
+        <label for="">Email</label><br />
+        <input
+          id="email"
+          name="email"
+          type="text"
+          placeholder="e.g johndoe@gmail.com"
+        /><br /><br />
+        <button>submit</button>
+      </form>
+
+      <h2>User List</h2>
+      <ul class="lists"></ul>
+
+      <!-- <div class="box">
+        <button>click me</button>
+      </div>
+
+      <ul class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul> -->
+    </div>
+  </body>
+  <script>
+    // let form = document.querySelector("form");
+    // let nameInput = document.querySelector("#name");
+    // let emailInput = document.querySelector("#email");
+    // let userList = document.querySelector(".lists");
+
+    // form.addEventListener("submit", (e) => {
+    //   e.preventDefault();
+
+    //   let list = document.createElement("li");
+
+    //   let name = document.createElement("span");
+    //   name.textContent = nameInput.value;
+
+    //   let email = document.createElement("span");
+    //   email.textContent = emailInput.value;
+
+    //   list.appendChild(name);
+    //   list.appendChild(email);
+
+    //   userList.appendChild(list);
+
+    //   nameInput.value = "";
+    //   emailInput.value = "";
+    // });
+
+    // let box = document.querySelector(".box");
+    // box.addEventListener("click", () => alert("Hello outer"));
+
+    // let btn = document.querySelector(".box button");
+    // btn.addEventListener("click", (e) => {
+    //   e.stopPropagation();
+    //   alert("Hello inner");
+    // });
+
+    // document.querySelector(".menu").addEventListener("click", (e) => {
+    //   console.log("You clicked on : " + e.target.tagName + " element");
+    // });
+
+    let form = document.querySelector("form");
+    let ul = document.querySelector("ul");
+    let li = "";
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      li += `
+        <li><span>${e.target.name.value}</span> - <span>${e.target.email.value}</span></li>
+      `;
+      ul.innerHTML = li;
+      form.reset();
+      e.target.name.focus();
+    });
+  </script>
+</html>
