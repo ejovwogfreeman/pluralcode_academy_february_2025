@@ -1,0 +1,86 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px 30%;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: coral;
+  margin-bottom: 10px;
+}
+
+form {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.msg {
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+form input {
+  width: 85%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solod coral;
+  outline: none;
+}
+
+form button {
+  width: 25%;
+  padding: 6px;
+  font-size: 18px;
+  background-color: coral;
+  border: 1px solid coral;
+  color: white;
+  cursor: pointer;
+}
+
+.todos {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 15px;
+}
+
+.todos .todo {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.todos .todo button {
+  padding: 6px;
+  font-size: 18px;
+  background-color: coral;
+  border: 1px solid coral;
+  color: white;
+  cursor: pointer;
+}
+
+.todos .todo small {
+  font-style: italic;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 20px 30px;
+    font-family: sans-serif;
+  }
+}
