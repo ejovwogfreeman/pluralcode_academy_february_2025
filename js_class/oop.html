@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JS OOP</h1>
+  </body>
+  <script>
+    // let obj = {
+    //   name: "gb",
+    //   email: "gb@gmail.com",
+    //   greet() {
+    //     return this.name + " morning";
+    //   },
+    // };
+
+    // console.log(obj.greet());
+
+    // constructor function
+    // function Person(name, surname, email, school) {
+    //   this.name = name;
+    //   this.surname = surname;
+    //   this.email = email;
+    //   this.school = school;
+    //   this.greet = function () {
+    //     return "Hello, my name is  " + this.name;
+    //   };
+    //   this.fullName = function () {
+    //     return this.name + " " + this.surname;
+    //   };
+    // }
+
+    // instantiating person object
+    // let person1 = new Person(
+    //   "godbless",
+    //   "ejovwo",
+    //   "gb@gmail.com",
+    //   "pluralcode"
+    // );
+    // console.log(person1);
+
+    // console.log(person1.greet());
+    // console.log(person1.fullName());
+
+    // let person2 = new Person("mark", "powells", "mark@gmail.com", "w3schools");
+    // console.log(person2);
+
+    // function Animal(name) {
+    //   this.name = name;
+    //   this.speak = function () {
+    //     return this.name + " is saying hello";
+    //   };
+    // }
+
+    // // inheritance
+    // function Dog(name, breed) {
+    //   Animal.call(this, name);
+    //   this.breed = breed;
+    // }
+
+    // if the methods is inside the parent object, the
+    // child object inherits the method automatically
+
+    // let myDog = new Dog("myDog", "wickedDog");
+
+    // console.log(myDog.speak());
+
+    // // using proptype functin
+    // function Animal(name) {
+    //   this.name = name;
+    // }
+
+    // Animal.prototype.speak = function () {
+    //   return this.name + " is saying hello";
+    // };
+
+    // // let animal = new Animal("dog");
+    // // console.log(animal.speak());
+
+    // function Dog(name, breed) {
+    //   Animal.call(this, name);
+    //   this.breed = breed;
+    // }
+
+    // // inherit from the animal prototype
+    // Dog.prototype = Object.create(Animal.prototype);
+
+    // // if the methods of the parent object is outside as a prtotype function,
+    // //  the child object does not inherit the method automatically, we use a special
+    // // prototype method to inherit its method
+
+    // let myDog = new Dog("jack", "shihuahua");
+    // let johnWicksDog = new Dog("jonWicksDog", "Golden retriever");
+
+    // console.log(myDog.speak());
+    // console.log(johnWicksDog.speak());
+
+    // es6
+
+    // class Person {
+    //   constructor(name, surname, email) {
+    //     this.name = name;
+    //     this.surname= surname;
+    //     this.email = email;
+    //   }
+    //   greet() {
+    //     return this.name + " is sayig hello";
+    //   }
+    //   fullName() {
+    //     return this.name + " " + this.surname;
+    //   }
+    // }
+
+    // let person1 = new Person("gb", "ej", "gb@gmail.com");
+    // let person2 = new Person("freeman", "freeman@gmail.com");
+
+    // console.log(person1.greet());
+    // console.log(person1.fullName());
+    // console.log(person2);
+    // console.log("hello");
+
+    class Animal {
+      constructor(name) {
+        this.name = name;
+      }
+      speak() {
+        return this.name + " says hello";
+      }
+    }
+
+    const animal = new Animal("dog");
+    // console.log(animal);
+    // console.log(animal.speak());
+
+    // inheritance using es6 classes
+    class Dog extends Animal {
+      constructor(name, breed) {
+        super(name); // calling the parent constructor
+        this.breed = breed;
+      }
+      bark() {
+        return this.name + " dog barks";
+      }
+    }
+
+    const dog = new Dog("myDog", "myWickdDog");
+
+    console.log(dog);
+    console.log(dog.speak());
+    console.log(dog.bark());
+  </script>
+</html>
