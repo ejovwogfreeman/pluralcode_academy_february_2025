@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello js</h1>
+    <!-- <button onclick="win()">win game</button>
+    <button onclick="loose()">loose game</button> -->
+    <!-- <button onclick='alert("Hello js class")'>click me</button> -->
+
+    <button id="dec">DECREASE</button> <span id="countDis">0</span>
+    <button id="inc">INCREASE</button>
+  </body>
+  <script>
+    // let name = "pluralcode";
+    // alert(name);
+    // console.log(name);
+
+    // var name = "godbless";
+
+    // name = "freeman";
+
+    // name = "mark";
+
+    // console.log(name);
+
+    // var, let and const
+
+    // var name = "Godbless";
+
+    // let name = "Godbless";
+
+    // const name = "Godbless";
+
+    // console.log(name);
+
+    // var: initialize, reassign and redeclare
+
+    // var name; // initialize without value
+
+    // var name = "Godbless"; // initialize with a value
+
+    // // reassign
+
+    // name = "Freeman";
+
+    // // redeclare (not good or not okay)
+
+    // var name = "Mark powells";
+
+    // console.log(name);
+
+    // let and const
+
+    // let (initiliaze, reassign but cannot redeclare)
+
+    // let name;
+
+    // let name = "godbless";
+
+    // reassign
+
+    // name = "godbless";
+
+    // name = "mark frank";
+
+    // redeclaration
+
+    // let name = "mark powell bro";
+
+    // const (cannot initialize without a value, cannot reassign and cannot redeclare)
+
+    // const name;
+
+    // name = 'godbless';
+
+    // reassign
+    // const name = "godbless";
+
+    // redeclare
+    // const name = "freeman";
+
+    // console.log(name);
+
+    // let score = 300000;
+
+    // function win() {
+    //   score += 1;
+    //   console.log(score);
+    // }
+
+    // function loose() {
+    //   score -= 1;
+    //   console.log(score);c
+    // }
+
+    // let name = "godbless";
+
+    // console.log(name);
+
+    // js data types (primitive and reference)
+
+    // primitive (number, string, boolean, undefined, null)
+
+    // refernce (array, object, functions, set, map)
+
+    // let name = "pluralcode";
+
+    // let names = ["gb", "ojo", "chi", "chio", "bil", "mir", "rot", "sal"];
+
+    // console.log(names);
+
+    // let myVar = "godbless";
+    // let myVar = 200;
+    // let myVar = 33.142;
+    // let myVar = true;
+    // let myVar = false;
+    // let myVar = 7 > 3;
+
+    // let myVar; //declare or define a variable without assigning a value
+
+    // let myVar = null;
+
+    // console.log(myVar);
+
+    // // type operator -> (gives the data type)
+    // console.log(typeof myVar);
+
+    // let myArr = ["godbless", "freeman", "lancelot"];
+    // let scores = [20, 55, 78, 99];
+
+    // let myVar = {
+    //   name: "godbless",
+    //   age: 75,
+    //   isAdmin: true,
+    //   rating: 4.7,
+    //   sub: ["math", "csc"],
+    //   socials: {
+    //     fb: "gbmedia",
+    //     isnt: "thegbmedia",
+    //   },
+    // };
+
+    // console.log(myArr);
+    // console.log(scores);
+    // console.log(myVar);
+
+    // line 1 to 6
+
+    // 6 * 10 = (60);
+
+    // function cleanBoard() {
+    //   // line 1 to 6
+    // }
+
+    // cleanBoard();
+
+    // function keyword, arrow function
+
+    // function greet() {
+    //   return "Hello world";
+    // }
+
+    // console.log(greet());
+
+    // function greet(name) {
+    //   return "Hello " + name;
+    // }
+
+    // console.log(greet("godbless"));
+    // console.log(greet("freeman"));
+    // console.log(greet("lancelot"));
+
+    // function greet(name, time) {
+    //   return "Hello " + name + ", good " + time;
+    // }
+
+    // console.log(greet("godbless", "monring"));
+    // console.log(greet("freeman", "afternoon"));
+    // console.log(greet("lancelot", "evening"));
+
+    // function greet(name = "pluralcode", time = "morning") {
+    //   return "Hello " + name + ", good " + time;
+    // }
+
+    // console.log(greet());
+    // console.log(greet("godbless"));
+    // console.log(greet("freeman", "afternoon"));
+    // console.log(greet("lancelot", "evening"));
+
+    // let mySet = new Set([1, 2, 2, 3]);
+
+    // let myMap = new Map([
+    //   ["red", "#ff0000"],
+    //   ["green", "#00ff00"],
+    //   ["blue", "#0000ff"],
+    // ]);
+
+    // console.log(mySet);
+
+    // let myStr = "abcdefghijkl";
+
+    // console.log(myStr.length);
+
+    // console.log(myStr[0]); // first char of every string
+    // console.log(myStr[1]);
+    // console.log(myStr[2]);
+    // console.log(myStr[myStr.length - 1]);
+
+    // split -> converts string to an array
+
+    // let myEmail = "ejovwogfreeman@gmail.com";
+    // let username = myEmail.split("@")[0];
+
+    // console.log(username);
+
+    // concat -> joins strings together
+
+    // let name = "Godbless ";
+    // let surname = "ejovwo";
+
+    // console.log(name.concat(surname));
+
+    // let name = "godbless";
+    // let name2 = "FREEMAN";
+
+    // console.log(name.toUpperCase());
+    // console.log(name2.toLocaleLowerCase());
+
+    // let name = "godbless";
+
+    // console.log(name.charAt(0));
+    // console.log(name.charAt(name.length - 1));
+
+    // let newName = name.replace("god", "jesus");
+
+    // console.log(newName);
+
+    // let name = "godbless";
+
+    // console.log(name.slice(0, 3));
+
+    // let arr = new Array();
+    // let arr = ["godbless", "mark", "freeman"];
+
+    // console.log(arr.length);
+
+    // push-> adds to the end of an array
+
+    // arr.push("lancelot", "john");
+
+    // arr.push("paul");
+
+    // unshift -> adds to the beginning of an array
+
+    // arr.unshift("daniel");
+    // arr.unshift("maxwell", "collins");
+
+    // pop -> removes from the end of an array
+
+    // arr.pop();
+    // arr.pop();
+
+    // shift -> removes from the beginning of an array
+
+    // arr.shift();
+    // arr.shift();
+
+    // console.log(arr);
+
+    // let x = 90;
+
+    // let y = 30;
+
+    // console.log(x + y);
+
+    // arith operators (+, -, *, /, %, **, ++, --)
+    // assignment operators (=, +=, -=, )
+    // comparison operators (==, ===, !=, !==, >, <, >=, <=)
+    // Logical operators (&&, ||, !)
+    // type operator
+    // Ternary operator
+
+    // let name = "godbless";
+
+    // console.log((x -= 1));
+
+    // console.log(2 == "2");
+    // console.log(2 === "2");
+    // console.log(5 > 3);
+    // console.log(5 < 3);
+
+    // console.log(6 > 5 && 3 < 5 && 5 == 5);
+    // console.log(!(6 < 5 || 3 > 5 || 5 !== 5));
+
+    // control flow
+    // let color = "red";
+
+    // if (color === "red") {
+    //   console.log("my color is red");
+    // } else {
+    //   console.log("wrong");
+    // }
+
+    // console.log(color == "red" ? "your color is red" : "wrong");
+
+    // let color = "blue";
+
+    // switch (color) {
+    //   case "red":
+    //     console.log("your color is red");
+    //     break;
+    //   case "blue":
+    //     console.log("your color is blue");
+    //     break;
+    //   default:
+    //     console.log("not a match");
+    //     break;
+    // }
+
+    // loops
+    // for, while
+
+    // for (let i = 0; i <= 20; i++) {
+    //   console.log(i);
+    // }
+
+    // let names = ["gb", "ojo", "chi", "chio", "bil", "mir", "rot", "sal"];
+
+    // for (let i = 0; i < names.length; i++) {
+    //   console.log(names[i]);
+    // }
+
+    // let i = 0;
+
+    // while (i <= 20) {
+    //   console.log(i);
+    //   i++;
+    // }
+
+    // dom selection method
+
+    // sigle element selectors
+    // document.getElementById -> selects an id
+    // document.querySelector -> selects the first of its kind
+
+    // multiple element selectors
+    // document.getElementsByTagName -> slects all slected tag
+    // document.getElementsByClassName -> selects all selected classes
+    // document.querSelectorAll -> selects all of its kind
+
+    let inc = document.getElementById("inc");
+    let dec = document.getElementById("dec");
+    let countDis = document.getElementById("countDis");
+    let count = 0;
+
+    inc.addEventListener("click", function () {
+      count += 1;
+      countDis.textContent = count;
+    });
+
+    dec.addEventListener("click", function () {
+      count -= 1;
+      countDis.textContent = count;
+    });
+  </script>
+  <!-- <script src="script.js"></script> -->
+</html>
