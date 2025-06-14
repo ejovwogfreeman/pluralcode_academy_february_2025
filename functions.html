@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JS Functions</h1>
+    <input type="text" placeholder="please enter radius" id="radius" />
+    <button id="btn">CALCULATE AREA</button>
+    <h3 id="result"></h3>
+    <script>
+      //   // js function
+
+      //   //   function greet() {
+      //   //     console.log("hello world");
+      //   //   }
+
+      //   //   function greet(name = "world") {
+      //   //     console.log("Hello " + name);
+      //   //   }
+
+      //   //   greet("Bilikis");
+      //   //   greet("Chidinma");
+      //   //   greet("Chioma");
+      //   //   greet();
+      //   //   greet();
+      //   //   greet();
+      //   //   greet();
+
+      //   // function registerUser(name, email, password){
+
+      //   // }
+
+      //   //   write a function that will return the square of a number
+
+      //   //   function squareNum() {
+      //   //     console.log(5 * 5);
+      //   //   }
+
+      //   //   function squareNum(x) {
+      //   //     console.log(x ** 2);
+      //   //   }
+
+      //   //   squareNum(2);
+      //   //   squareNum(100);
+      //   //   squareNum(5);
+
+      //   //   pi * r ** 2;
+
+      //   function areaOfCircle(r) {
+      //     // console.log(3.142 * r ** 2);
+      //     return 3.142 * r ** 2;
+      //   }
+
+      //   //   areaOfCircle(2);
+      //   //   areaOfCircle(3);
+      //   //   areaOfCircle(5);
+
+      //   //   alert("welcome to my calc app");
+      //   //   let radius = prompt("please enter a radius");
+      //   //   alert(areaOfCircle(radius));
+
+      //   let radius = document.getElementById("radius");
+      //   let btn = document.getElementById("btn");
+      //   let result = document.getElementById("result");
+
+      //   //   console.log(radius, result, btn);
+
+      //   btn.addEventListener("click", () => {
+      //     if (isNaN(radius.value)) {
+      //       result.textContent = "radius is not a valid number";
+      //       radius.value = "";
+      //       return;
+      //     }
+      //     if (radius.value.length > 5) {
+      //       result.textContent = "Your number is too big";
+      //       radius.value = "";
+      //       return;
+      //     }
+      //     let area = areaOfCircle(radius.value);
+      //     result.textContent = area;
+      //     radius.value = "";
+      //   });
+
+      //
+      //   let myArr = new Array("merlin", "got", "seeker");
+
+      let myArr = ["merlin", "got", "seeker", "spiderman", "dr doom"];
+
+      //   //   adds to the end
+      //   myArr.push("300 sparta");
+      //   myArr.push("gladiators");
+
+      //   //   adds to the begining
+      //   myArr.unshift("gods of egypt");
+      //   myArr.unshift("lord of the rings");
+
+      //   //   remove from the end
+      //   myArr.pop();
+
+      //   //   remove from the begining
+      //   myArr.shift();
+
+      //   console.log(myArr);
+
+      //   const slicedArr = myArr.slice(0, 3);
+      //   console.log(slicedArr);
+
+      //   console.log(myArr);
+
+      //   const splicedArr = myArr.splice(0, 3);s
+
+      //   const splicedArr = myArr.splice(0, 3, "new movie");
+      //   console.log(splicedArr);
+
+      //   myArr.splice(3, 0, "tom and jerry");
+
+      //   console.log(myArr);
+
+      //   for (let i = 0; i <= 10; i++) {
+      //     console.log(i);
+      //   }
+
+      //   let i = 0;
+
+      //   while (i <= 10) {
+      //     console.log(i);
+
+      //     i++;
+      //   }
+
+      //   myArr.push("new mov1", "new mov2", "new mov3");
+
+      //   for (let i = 0; i < myArr.length; i++) {
+      //     console.log(myArr[i]);
+      //   }
+
+      let myObj = {
+        name: "gb",
+        email: "gb@gmail.com",
+        school: "pluralcode",
+        isStudent: false,
+        isTutor: true,
+        courses: ["html", "css", "js"],
+        socials: {
+          fb: "ejgfm",
+          twt: "ejf",
+        },
+      };
+
+      console.log(myObj);
+    </script>
+  </body>
+</html>
